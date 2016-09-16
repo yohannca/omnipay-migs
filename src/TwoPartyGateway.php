@@ -59,4 +59,9 @@ class TwoPartyGateway extends AbstractGateway
     {
         return $this->createRequest('\Omnipay\Migs\Message\TwoPartyPurchaseRequest', $parameters);
     }
+
+    public function refund(array $parameters = [])
+    {
+        return $this->createRequest('\Omnipay\Migs\Message\TwoPartyRefundRequest', $parameters);
+    }
 }

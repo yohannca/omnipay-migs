@@ -1,5 +1,5 @@
 {
-    "name": "omnipay/migs",
+    "name": "yohannca/migs",
     "type": "library",
     "description": "MIGS driver for the Omnipay payment processing library",
     "keywords": [
@@ -11,7 +11,7 @@
         "pay",
         "payment"
     ],
-    "homepage": "https://github.com/thephpleague/omnipay-migs",
+    "homepage": "https://github.com/yohannca/omnipay-migs",
     "license": "MIT",
     "authors": [
         {
