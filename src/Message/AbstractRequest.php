@@ -30,6 +30,16 @@ abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest
         return $this->setParameter('merchantAccessCode', $value);
     }
 
+    public function getTransactionNumber()
+    {
+        return $this->getParameter('transactionNumber');
+    }
+
+    public function setTransactionNumber($value)
+    {
+        return $this->setParameter('transactionNumber', $value);
+    }
+
     public function getSecureHash()
     {
         return $this->getParameter('secureHash');
@@ -71,7 +81,7 @@ abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest
                 $hash .= $v;
             }
         }
-        
+
         return strtoupper(md5($hash));
     }
 }
