@@ -61,6 +61,28 @@ class TwoPartyRefundRequest extends AbstractRequest
     }
 
     /**
+     * Sets the vpc_User.
+     *
+     * @param  string  $value
+     * @return string
+     */
+    public function setUser($value)
+    {
+        return $this->setParameter('user', $value);
+    }
+
+    /**
+     * Sets the vpc_Password.
+     *
+     * @param  string  $value
+     * @return string
+     */
+    public function setPassword($value)
+    {
+        return $this->setParameter('password', $value);
+    }
+
+    /**
      * The the VPC endpoint.
      *
      * @return string
